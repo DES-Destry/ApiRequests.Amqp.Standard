@@ -1,6 +1,6 @@
 {
   "name": "ApiRequests.Amqp.Standard",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "main": "index.js",
   "repository": "git@github.com:DES-Destry/ApiRequests.Amqp.Standard.git",
   "author": "Andrey Kirik <dev.andrey.kirik@gmail.com>",
