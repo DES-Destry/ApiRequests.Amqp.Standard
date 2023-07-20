@@ -2,6 +2,22 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRequests.Amqp.Standard", "ApiRequests.Amqp.Standard\ApiRequests.Amqp.Standard.csproj", "{0F7BA09C-D932-4809-A13B-EC7134CDE4E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{F9CD6BAF-26D9-4635-8FC4-E1C9DA25F61B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{AA82CA53-914E-44D2-AAFF-D3C50EEA002D}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish.yaml = .github\workflows\publish.yaml
+		.github\workflows\telefram-pr-request.yaml = .github\workflows\telefram-pr-request.yaml
+		.github\workflows\telegram-pr-open.yaml = .github\workflows\telegram-pr-open.yaml
+		.github\workflows\telegram-pr-submit.yaml = .github\workflows\telegram-pr-submit.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{790F950E-5CED-4D32-BFCA-A1B3DAE85DCA}"
+	ProjectSection(SolutionItems) = preProject
+		.releaserc.json = .releaserc.json
+		package.json = package.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +28,9 @@ Global
 		{0F7BA09C-D932-4809-A13B-EC7134CDE4E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F7BA09C-D932-4809-A13B-EC7134CDE4E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F7BA09C-D932-4809-A13B-EC7134CDE4E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA82CA53-914E-44D2-AAFF-D3C50EEA002D} = {F9CD6BAF-26D9-4635-8FC4-E1C9DA25F61B}
+		{790F950E-5CED-4D32-BFCA-A1B3DAE85DCA} = {F9CD6BAF-26D9-4635-8FC4-E1C9DA25F61B}
 	EndGlobalSection
 EndGlobal
